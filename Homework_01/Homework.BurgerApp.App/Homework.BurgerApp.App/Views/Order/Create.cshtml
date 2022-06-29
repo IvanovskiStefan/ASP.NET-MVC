@@ -1,0 +1,18 @@
+﻿@model Order
+<form asp-action="Create" asp-controller="Order" method="post">
+    <label asp-for="FullName"> Full Name</label>
+    <input asp-for="FullName" />
+    <br />
+    <br />
+
+    <label asp-for="Burgers"></label>
+    <input asp-for="Burgers" />
+    <br />
+    <br />
+    <label asp-for="IsDelivered">Do you want to get the burger delivered at you adress?</label>
+    <input asp-for="IsDelivered" />
+
+
+    <button type="submit"> Submit</button>
+
+</form>

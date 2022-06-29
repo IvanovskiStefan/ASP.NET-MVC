@@ -1,0 +1,23 @@
+﻿@model OrderViewDetailsModel
+<p>Details about the order @Model.Id</p>
+<ul>
+     
+        <li>Ordered by user : @Model.FullName </li>
+        <br />
+        <li> Location of delivery :@Model.MyLocation</li>
+        <br />
+        <li>Total price of order :@Model.TotalPrice</li>
+         <br />
+
+         <p> Order Details :
+             @foreach(var items in Model.Burgers)
+    {
+        <li>Burger :@items.Name</li>
+        <li>Price of burger :@items.Price</li>
+        <br />
+
+
+    }</p>
+    
+  
+</ul>

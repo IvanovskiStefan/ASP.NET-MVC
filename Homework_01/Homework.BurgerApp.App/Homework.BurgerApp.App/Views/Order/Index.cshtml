@@ -1,0 +1,18 @@
+﻿@model OrderViewModel
+
+<ul>
+    <li>@Model.FullName</li>
+    
+    @foreach (var burger in Model.Burgers)
+    {
+        
+        <li>@burger.Name</li>
+        <li>@burger.IsVegan</li>
+        <li>@burger.IsVegetarian</li>
+        <li>@burger.HasFries</li>
+        <li>@burger.Price</li>
+        
+        <br/>
+        <br/>
+    }
+</ul>
